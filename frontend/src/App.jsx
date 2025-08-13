@@ -9,7 +9,7 @@ import Register from "./components/auth/Register";
 import UserDashboard from "./components/user/UserDashboard";
 import AdminDashboard from "./components/admin/AdminDashboard";
 import BookCab from "./components/user/BookCab";
-import BookingHistory from "./components/user/BookingHistory";
+import BookingHistory from "./components/user/BookingHIstory";
 
 function App() {
   return (

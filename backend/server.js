@@ -21,9 +21,9 @@ async function startServer() {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
-    context: ({ req }) => {
+    context: async ({ req }) => {
       const token = req.headers.authorization?.replace("Bearer ", "");
-      const user = token ? verifyToken(token) : null;
+      const user = token ? await verifyToken(token) : null;
       return { user };
     },
   });
